@@ -11,10 +11,10 @@ import (
 // 连接数据库
 const (
 	DB_USER_NAME = "root"
-	DB_PASSWORD  = "10086KevinXu."
+	DB_PASSWORD  = "123456"
 	DB_IP        = "localhost"
 	DB_PORT      = "3306"
-	DB_NAME      = "StudentsHub"
+	DB_NAME      = "student_hub"
 )
 
 type User struct {

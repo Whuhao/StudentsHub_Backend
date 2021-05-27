@@ -32,7 +32,7 @@ func Authenticate(UserName string, Password string) (bool, error) {
 	}
 }
 
-// @Title CreateUser
+// @Title AddUser
 // @Description create users
 // @Param	body		body 	models.User	true		"body for user content"
 // @Success 200 {int} models.User.UserID
@@ -228,7 +228,7 @@ func (u *UserController) Delete() {
 		return
 	} else {
 		logs.Info(err.Error())
-		u.Data["json"] = "delete failed"
+		u.Data["json"] = "delete succeeded"
 		u.ServeJSON()
 		return
 	}
